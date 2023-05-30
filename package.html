@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Package</title>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> -->	
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0"/>
+
+	<link rel="stylesheet" href="">
+	<!-- content 속성값 내용 변경! -->
+	<meta name="Subject" content="내용">
+	<meta name="Title" content="제목">
+	<meta name="Keywords" content="키워드1,키워드2,키워드3">
+	<meta  name="Description" content="설명">
+	<meta name="Author" content="제작자/제작사">
+	<meta name="Publisher" content="퍼블리셔">
+	<meta name="Classification" content="타이틀">
+	<meta name="Location" content="회사위치">
+	<meta name="Author-Date" content="제작날자">
+	<meta name="Copyright" content="저작권">
+	<meta name="Robots" content="index,follow"> 
+
+
+	<link rel="shortcut icon" href="img/favicon-16x16.png">
+	<link rel="apple-touch-icon" href="img/favicon-16x16.png">
+
+	<link href='css/reset.css' type='text/css' rel='stylesheet'>
+	<link rel="stylesheet" href="css/package.css">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src='js/lib/jquery-3.3.1.min.js' type='text/javascript' charset='utf-8'></script>
+	<!-- user jQuery 웹개발자용 -->
+    <script src='js/나의스크립트.js'></script>
+    
+	
+	
+	<!-- 크로스브라우징 -->
+	<!--[if (lte IE 9)]>
+	<script src='js/lib/IE9.js' type='text/javascript' charset='utf-8'></script>		
+	<![endif]-->
+
+	<!--[if (lte IE 8)]>
+	<script src='js/lib/html5shiv.min.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/PIE.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/jqPIE.js' type='text/javascript' charset='utf-8'></script>		
+	<link href='css/ie78.css' rel='stylesheet' type='text/css'>
+	<![endif]-->
+</head>
+<body>
+    <div id="wrap">
+        <nav id="gnb">
+            <div id="top_underline">
+                <div id="topMenu">
+                    <ul>
+                        <li><a href="login.html">로그인</a></li>
+                        <li><a href="signin.html">회원가입</a></li>
+                        <li><a href="mypage.html">My page</a></li>
+                        <li><a href="customer.html">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div id="mainMenu_wrap">
+                <div id="menuLogo">
+                    <a href="index.html"><img src="img/index/index_logo.png" alt=""></a>
+                </div>
+                <ul id="mainMenu">
+                    <li><a href="brand.html">브랜드소개</a></li>
+                    <li><a href="package.html">패키지/이벤트</a></li>
+                    <li><a href="ski.html">프로그램</a></li>
+                    <li><a href="season.html">통합예약</a></li>
+                    <li><a href="restaurant.html">다이닝</a></li>
+                </ul>
+                <div id="subMenu">
+                    <div id="subMenu_wrap">
+                        <div id="subMenu_wrap2">
+                            <ul class="subMenu1">
+                                <li><a href="package.html">패키지</a></li>
+                                <li><a href="event.html">이벤트</a></li>
+                                <li><a href="#">제휴사</a></li>
+                            </ul>
+                            <ul class="subMenu2">
+                                <li><a href="ski.html">스키장</a></li>
+                                <li><a href="spa.html">스파</a></li>
+                                <li><a href="#">승마, 골프</a></li>
+                                <li><a href="#">오락시설</a></li>
+                            </ul class="subMenu2">
+                            <ul>
+                                <li><a href="season.html">시즌권</a></li>
+                                <li><a href="room.html">객실예약</a></li>
+                                <li><a href="#">개인</a></li>
+                                <li><a href="#">단체</a></li>
+                            </ul class="subMenu2">
+                            <ul>
+                                <li><a href="restaurant.html">레스토랑</a></li>
+                                <li><a href="#">카페</a></li>
+                                <li><a href="#">푸드코트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <div class="package_visual_photo">
+                <div class="package_visual_boxphoto"></div>
+                <div class="package_visual_txt_box">
+                    <h1 class="package_visual_txt1">패키지</h1>
+                    <h3 class="package_visual_txt2">보다 저렴하고 실속있게 즐길 수 있는 상품들을 제공하고 있습니다.</h3>
+                </div>
+            </div>
+        </header>
+        <div class="clear"></div>
+        <section id="package_section1">
+            <form id="p_form">
+                <div id="p_leftsub">
+                    <label for="p_indate" id="p_label">시작일</label>
+                    <input type="date" id="p_checkin" name="p_checkin" placeholder="시작일">
+                    <label for="p_indate" id="p_label">종료일</label>
+                    <input type="date" id="p_checkin" name="p_checkin">
+                    <br><br>
+                    <label for="persons" id="p_label">인원</label>
+                    <select name="persons" id="persons">
+                        <option value="p1">인원 수</option>
+                        <option value="p2">1</option>
+                        <option value="p3">2</option>
+                        <option value="p4">3</option>
+                        <option value="p5">4</option>
+                        <option value="p6">5</option>
+                        <option value="p7">6</option>
+                        <option value="p8">7</option>
+                    </select>
+                    <br><br>
+                    <label for="keyword" id="p_label">키워드</label>
+                    <input type="checkbox" id="ep2" name="가족" value="가족">
+                    <label for="e2" id="pcheckbox">가족</label>
+                    <input type="checkbox" id="e2" name="e2" value="Car">
+                    <label for="e2" id="pcheckbox">친구</label>
+                    <input type="checkbox" id="e2" name="e2" value="Car">
+                    <label for="e2" id="pcheckbox">연인</label>
+                    <input type="checkbox" id="e2" name="e2" value="Car">
+
+                    <label for="e2" id="pcheckbox">힐링</label>
+                    <input type="checkbox" id="e2" name="e2" value="Car">
+                    <label for="e2" id="pcheckbox">스키장</label>
+                    <input type="checkbox" id="e2" name="e2" value="Car">
+                    <label for="e2" id="pcheckbox">워터파크</label>
+                    <input type="checkbox" id="e2" name="e2" value="Car">
+                    <label for="e2" id="pcheckbox">스파</label>
+                    <br><br>
+                </div>
+                <div id="p_rightsub">
+                    <input type="submit" id="p_submit">
+                </div>
+              </form>
+              
+        </section>
+        <section id="package_section2">
+            <div id="ps1_boxes"> <!--nth child로 사진 바꾸기-->
+                <ul>
+                    <li><a href="#" class="ps1_txt">
+                        <div class="ps1_box ps1_box1"></div>
+                        <p><span>할로윈 이벤트</span></p>
+                        <p>PEARL에서만 경험할 수 있는 특별한 할로윈이벤트</p>
+                        <div class="ps1_reserve">
+                            <p>예약 2020-10-16 ~ 11-15 <br>
+                            투숙 2020-10-16 ~ 11-15</p>
+                            <p>예약하기</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#" class="ps1_txt">
+                        <div class="ps1_box ps1_box2"></div>
+                        <p><span>PEARL Night out</span></p>
+                        <p>객실 1박(2기준) + 디너</p>
+                        <div class="ps1_reserve">
+                            <p>예약 2020-09-16 ~ 11-20 <br>
+                            투숙 2020-09-16 ~ 11-20</p>
+                            <p>예약하기</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#" class="ps1_txt">
+                        <div class="ps1_box ps1_box3"></div>
+                        <p><span>Room & Breakfast</span></p>
+                        <p>객실 1박(2기준) + 조식 2인</p>
+                        <div class="ps1_reserve">
+                            <p>예약 2020-11-10 ~ 12-20 <br>
+                            투숙 2020-11-10 ~ 12-20</p>
+                            <p>예약하기</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#" class="ps1_txt">
+                        <div class="ps1_box ps1_box4"></div>
+                        <p><span>Spa & Aroma</span></p>
+                        <p>Spa 이용권 + 객실 1박</p>
+                        <div class="ps1_reserve">
+                            <p>예약 2020-10-13 ~ 11-25 <br>
+                            투숙 2020-10-13 ~ 11-25</p>
+                            <p>예약하기</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#" class="ps1_txt">
+                        <div class="ps1_box ps1_box5"></div>
+                        <p><span>승마 & 골프</span></p>
+                        <p>승마 + 골프 일일이용권</p>
+                        <div class="ps1_reserve">
+                            <p>예약 2020-09-16 ~ 11-20 <br>
+                            투숙 2020-09-16 ~ 11-20</p>
+                            <p>예약하기</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#" class="ps1_txt">
+                        <div class="ps1_box ps1_box6"></div>
+                        <p><span>Premium Ski</span></p>
+                        <p>스키장 종일 이용권 + 객실 1박</p>
+                        <div class="ps1_reserve">
+                            <p>예약 2020-11-01 ~ 12-31 <br>
+                            투숙 2020-11-01 ~ 12-31</p>
+                            <p>예약하기</p>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+        <footer id="package_footer">
+            <div id="footer_top">
+     
+                <ul class="footer_topBox">
+                    <li><a href="brand.html">브랜드 소개</a></li>
+     
+                    <li>
+                        <a href="#">패키지/이벤트</a>
+                        <ul class="footer_subMenu">
+                            <li><a href="package.html">패키지</a></li>
+                            <li><a href="event.html">이벤트</a></li>
+                            <li><a href="#">제휴사</a></li>
+                        </ul>                 
+                    </li>
+     
+                    <li>
+                        <a href="#">프로그램</a>
+                        <ul class="footer_subMenu">
+                            <li><a href="ski.html">스키장</a></li>
+                            <li><a href="spa.html">스파</a></li>
+                            <li><a href="#">승마, 골프</a></li>
+                            <li><a href="#">오락시설</a></li>
+                        </ul>
+                    </li>
+     
+                    <li>
+                        <a href="#">통합예약</a>
+                        <ul class="footer_subMenu">
+                            <li><a href="season.html">시즌권</a></li>
+                            <li><a href="room.html">객실예약</a></li>
+                            <li><a href="#">개인</a></li>
+                            <li><a href="#">단체</a></li>
+                        </ul>
+                    </li>
+     
+                    <li>
+                        <a href="#">다이닝</a>
+                        <ul class="footer_subMenu">
+                            <li><a href="restaurant.html">레스토랑</a></li>
+                            <li><a href="#">푸드코트</a></li>
+                            <li><a href="#">카페</a></li>
+                        </ul>
+                    </li>
+     
+                    <li><a href="customer.html">고객센터</a>
+                        <ul class="footer_subMenu">
+                            <li><a href="customer.html">분실물센터</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+     
+     
+     
+            </div>
+            <div id="footer_bottom">
+                <div id="footer_left">
+     
+                    <a href="#" class="footer_last1">ABOUT  |  TERMS OF USE  |  PRIVACY POLICY  |  CONTACT US |  SITEMAP  |  GIFT CARD</a>
+     
+                    <p class="footer_last2">
+     
+                    PEAR Resort <br>
+                    955-Olimpic-ro, Gangwon-do, Pyeongchang-gun, Korea <br>
+                    Seoul Office: 285-456, Seung Building 4th Floor, Hengbok-dong, Hengbok-gu, Seoul, Korea <br>
+                    President: SeungA JUNG  |  Business license: 820-20-199858 <br>
+                    Copyright 2020 PEARL RESORT &copy; All rights Reserved.
+     
+                    </p>
+                    
+                </div>
+     
+     
+                <div id="footer_right">
+                    <ul>
+                        <li><a href="https://ko-kr.facebook.com/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://section.blog.naver.com/BlogHome.nhn?directoryNo=0&currentPage=1&groupId=0" class="blog" target="_blank"><i class="fab fa-blogger-b"></i></a></li>
+                        <li><a href="https://www.instagram.com/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>  
+        <a href="#" class="goTop">Top</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,633 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>room</title>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> -->	
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0"/>
+
+	<!-- content 속성값 내용 변경! -->
+	<meta name="Subject" content="내용">
+	<meta name="Title" content="제목">
+	<meta name="Keywords" content="키워드1,키워드2,키워드3">
+	<meta name="Description" content="설명">
+	<meta name="Author" content="제작자/제작사">
+	<meta name="Publisher" content="퍼블리셔">
+	<meta name="Classification" content="타이틀">
+	<meta name="Location" content="회사위치">
+	<meta name="Author-Date" content="제작날자">
+	<meta name="Copyright" content="저작권">
+	<meta name="Robots" content="index,follow"> 
+
+
+	<link rel="shortcut icon" href="img/favicon-16x16.png">
+	<link rel="apple-touch-icon" href="img/favicon-16x16.png">
+
+	<link href='css/reset.css' type='text/css' rel='stylesheet'>
+	<link href='css/room_style.css' type='text/css' rel='stylesheet'>
+	
+
+	<script src='js/lib/jquery-3.3.1.min.js' type='text/javascript' charset='utf-8'></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+	
+	<!-- user jQuery 웹개발자용 -->
+	<script src='js/room.js'></script>
+	
+	
+	<!-- 크로스브라우징 -->
+	<!--[if (lte IE 9)]>
+	<script src='js/lib/IE9.js' type='text/javascript' charset='utf-8'></script>		
+	<![endif]-->
+
+	<!--[if (lte IE 8)]>
+	<script src='js/lib/html5shiv.min.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/PIE.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/jqPIE.js' type='text/javascript' charset='utf-8'></script>		
+	<link href='css/ie78.css' rel='stylesheet' type='text/css'>
+	<![endif]-->	
+	
+</head>
+<body>
+<div id='wrap'>
+	<nav id="gnb">
+		<div id="top_underline">
+			<div id="topMenu">
+				<ul>
+					<li><a href="login.html">로그인</a></li>
+					<li><a href="signin.html">회원가입</a></li>
+					<li><a href="mypage.html">My page</a></li>
+					<li><a href="customer.html">고객센터</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="mainMenu_wrap">
+			<div id="menuLogo">
+				<a href="index.html"><img src="img/index/index_logo.png" alt=""></a>
+			</div>
+			<ul id="mainMenu">
+				<li><a href="brand.html">브랜드소개</a></li>
+				<li><a href="package.html">패키지/이벤트</a></li>
+				<li><a href="ski.html">프로그램</a></li>
+				<li><a href="season.html">통합예약</a></li>
+				<li><a href="restaurant.html">다이닝</a></li>
+			</ul>
+			<div id="subMenu">
+				<div id="subMenu_wrap">
+					<div id="subMenu_wrap2">
+						<ul class="subMenu1">
+							<li><a href="package.html">패키지</a></li>
+							<li><a href="event.html">이벤트</a></li>
+							<li><a href="#">제휴사</a></li>
+						</ul>
+						<ul class="subMenu2">
+							<li><a href="ski.html">스키장</a></li>
+							<li><a href="spa.html">스파</a></li>
+							<li><a href="#">승마, 골프</a></li>
+							<li><a href="#">오락시설</a></li>
+						</ul class="subMenu2">
+						<ul>
+							<li><a href="season.html">시즌권</a></li>
+							<li><a href="room.html">객실예약</a></li>
+							<li><a href="#">개인</a></li>
+							<li><a href="#">단체</a></li>
+						</ul class="subMenu2">
+						<ul>
+							<li><a href="restaurant.html">레스토랑</a></li>
+							<li><a href="#">카페</a></li>
+							<li><a href="#">푸드코트</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="claer"></div>
+
+	<header>
+		<div class="room_visual_photo">
+			<div class="room_visual_boxphoto"></div>
+			<div class="room_visual_txt_box">
+				<h1 class="room_visual_txt1">객실안내</h1>
+				<h3 class="room_visual_txt2">Pearl 리조트를 보다 편하게 예약하실 수 있게 도와드리겠습니다.</h3>
+			</div>
+		</div>
+
+		<div class="room_visual_boxes">
+			<h3 class="room_visual_eventBox1"><a href="#">객실안내</a></h3>
+			<h3 class="room_visual_eventBox2"><a href="#">잔여객실</a></h3>
+		</div>
+		
+	</header>
+
+	<main>
+		<div class="main_wrap">
+			<div class="clear"></div>
+			<div id="room_main_text">
+				<p>
+					저희 객실 전체는 천혜의 자연환경, 어디서나 스키장을 볼 수 있는 전망 좋은 객실과 <br>
+					깨끗하고 편리한 부대시설, 교육장 및 야외활동을 위한 다양한 시설들이 완벽하게 준비되어 있습니다.
+				</p>
+			</div>
+			<div id="room_main_text_line"></div>
+
+
+			<!-- <div id="room_visual_sliderWrap">
+				<ul class="room_visual_slider">
+					<li class="slide slide1">
+						<img src="img/room/room_slide1.jpg" alt="">
+					</li>
+					<li class="slide slide2">
+						<img src="img/room/room_slide2.jpg" alt="">
+					</li>
+					<li class="slide slide3">
+						<img src="img/room/room_slide3.jpg" alt="">
+					</li>
+				</ul>
+
+				<ul class="room_visual_slider_util">
+					<li>
+						<a href="#" class="btn_left"><i class="fas fa-chevron-left"></i></a>
+					</li>
+					<li>
+						<a href="#" class="btn_right"><i class="fas fa-chevron_right"></i></a>
+					</li>
+				</ul>
+			</div> -->
+
+
+			<div id="room_family_wrap">
+				<div id="room_slider">
+					<div class="room_slide room_slide1">
+						<div id="room_family_img"><img src="img/room/room_slide1.jpg" alt=""></div>
+						<div id="room_family_text_title">
+							<h2>디럭스 룸</h2>
+							<h3>총규모</h3>
+							<h4>
+								A동 지상 15~20층 <br>
+								(30평형 25실,원룸 구조)
+							</h4>
+						</div>
+					</div>
+
+					<div class="room_slide room_slide2">
+						<div id="room_family_img"><img src="img/room/room_slide2.jpg" alt=""></div>
+						<div id="room_family_text_title">
+							<h2>패밀리 룸</h2>
+							<h3>총규모</h3>
+							<h4>
+								A동 지상 10~15층 <br>
+								(42평형 35실,온돌 구조)
+							</h4>
+						</div>
+					</div>
+
+					<div class="room_slide room_slide3">
+						<div id="room_family_img"><img src="img/room/room_slide3.jpg" alt=""></div>
+						<div id="room_family_text_title">
+							<h2>트윈 룸</h2>
+							<h3>총규모</h3>
+							<h4>
+								B동 지상 10~15층 <br>
+								(25평형 55실,온돌 원룸 구조)
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="btn_wrap">
+				<div class="room_family_left_btn">
+					<a href="#" onclick="return false"><i class="fas fa-chevron-left"></i></a>
+				</div>
+				<div class="room_family_right_btn">
+					<a href="#" onclick="return false"><i class="fas fa-chevron-right"></i></a>
+				</div>
+			</div>
+			
+			<div class="clear"></div>
+			
+			
+			<div id="room_guestroom">
+				<div id="room_gusestroom_text">
+					<h1>Room Reservation</h1>
+					<table>
+						<tr class="week">
+							<td>SUN</td>
+							<td>MON</td>
+							<td>TUE</td>
+							<td>WED</td>
+							<td>THU</td>
+							<td>FRI</td>
+							<td>SAT</td>
+						</tr>
+						<tr class="small">
+							<td>　</td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+						</tr>
+						<tr class="big">
+							<td>
+								<p>　</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<img src="img/room/stamp_1.png" alt="">
+								<p class="no">예약불가</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+						</tr>
+						<tr class="small">
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+						</tr>
+						<tr class="big">
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<img src="img/room/stamp_1.png" alt="">
+								<p class="no">예약불가</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+						</tr>
+						<tr class="small">
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+						</tr>
+						<tr class="big">
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<img src="img/room/stamp_1.png" alt="">
+								<p class="no">예약불가</p>
+							</td>
+							<td>
+								<img src="img/room/stamp_1.png" alt="">
+								<p class="no">예약불가</p>
+							</td>
+						</tr>
+						<tr class="small">
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+						</tr>
+						<tr class="big">
+							<td>
+								<img src="img/room/stamp_1.png" alt="">
+								<p class="no">예약불가</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+						</tr>
+						<tr class="small">
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td>31</td>
+							<td>　</td>
+							<td>　</td>
+							<td>　</td>
+						</tr>
+						<tr class="big">
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>예약가능</p>
+							</td>
+							<td>
+								<p>　</p>
+							</td>
+							<td>
+								<p>　</p>
+							</td>
+							<td>
+								<p>　</p>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="room_gusetroom_announcement_bg">
+					<div id="room_gusetroom_announcement_txt">
+						<div id="room_gusetroom_announcement_txtWrap">
+							<h1>Booking Guidance</h1>
+							<p>
+								해충방제, 바이러스 제어 시스템을 통한 청결관리와 화학표백을 하지 않는 침구,
+								그리고 친환경 소재의 에이스 침대를 배치하여 최상의 객실 컨디션을 제공합니다.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div id="room_gusetroom_Fare_wrap">
+					<div id="room_gusetroom_Fare_main_text">
+						<h1>Room Rate</h1>
+					</div>
+					<div id="room_gusetroom_Fare_ticket">
+						<table>
+							<tr>
+								<td colspan="2">구분</td>
+								<td>시즌</td>
+								<td>하이시즌</td>
+								<td>비시즌</td>
+							</tr>
+							<tr>
+								<td colspan="2">일반요금</td>
+								<td colspan="3">200,000원</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="rowspan">리조트회원</td>
+								<td>주중</td>
+								<td>180,000원</td>
+								<td>200,000원</td>
+								<td>160,000원</td>
+							</tr>
+							<tr>
+								<td>주말</td>
+								<td>200,000원</td>
+								<td>240,000원</td>
+								<td>180,000원</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="rowspan">추천회원</td>
+								<td>주중</td>
+								<td>200,000원</td>
+								<td>240,000원</td>
+								<td>180,000원</td>
+							</tr>
+							<tr>
+								<td>주말</td>
+								<td>220,000원</td>
+								<td>260,000원</td>
+								<td>200,000원</td>
+							</tr>
+							<tr>
+								<td rowspan="2" class="rowspan">사이버예약</td>
+								<td>주중</td>
+								<td>220,000원</td>
+								<td>260,000원</td>
+								<td>200,000원</td>
+							</tr>
+							<tr>
+								<td>주말</td>
+								<td>240,000원</td>
+								<td>280,000원</td>
+								<td>220,000원</td>
+							</tr>
+						</table>
+					
+					</div>
+				</div>
+				<div id="room_ch_inout_wrap">
+					<div id="room_ch_inout_main_text">
+						<h1>Check-IN&OUT</h1>
+					</div>
+					<div id="room_ch_inout_box">
+						<div id="room_ch_inout_box1">
+							<img src="img/room/room_1.png" alt="달력">
+							<div class="room_ch_inout_box1_txt">
+								<h3>CHECK-IN</h3>
+								<p>
+									입실 시간은 14 ~ 22시이며,
+									22시 이후 입실 시 프론트 데스크
+									(031-644-1261)로 사전 연락주시기 바랍니다.
+								</p>
+							</div>
+						</div>
+						<div id="room_ch_inout_box2">
+							<img src="img/room/room_2.png" alt="달력">
+							<h3>CHECK-OUT</h3>
+							<p>
+								퇴실 시간은 12시 입니다.
+								다음 고객의 이용을 위하여 퇴실 시간을 준수해 주시기 바랍니다.
+						</div>
+						<div id="room_ch_inout_box3">
+							<img src="img/room/room_3.png" alt="달력">
+							<h3>퇴실시</h3>
+							<p>
+								퇴실시 실내 환기 및 객실 내 비품정리,
+								객실 내 쓰레기는 집적소 분리 수거,
+								퇴실 점검 후 프론트 데스크에 객실키 반납 및
+								요금 정산 후 퇴실하시면 됩니다.
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div id="room_gusetroom_Beware_wrap">
+						<div id="room_gusetroom_Beware_main_text">
+							<div id="point_5"></div>
+							<h1>Precautions</h1>
+						</div>
+						<div id="room_gusetroom_Beware_box">
+							<div id="room_gusetroom_Beware_box1">
+								<img src="img/room/Beware1.png" alt="동물금지">
+								<h2>애완동물 투숙 금지</h2>
+							</div>
+							<div id="room_gusetroom_Beware_box2">
+								<img src="img/room/Beware2.png" alt="동물금지">
+								<h2>휴대용 버너 사용 금지</h2>
+							</div>
+							<div id="room_gusetroom_Beware_box3">
+								<img src="img/room/Beware3.png" alt="동물금지">
+								<h2>구이 및 향이 강한음식 금지</h2>
+							</div>
+							<div id="room_gusetroom_Beware_box4">
+								<img src="img/room/Beware4.png" alt="동물금지">
+								<h2>객실 내 흡연 금지</h2>
+							</div>
+							<div id="room_gusetroom_Beware_box5">
+								<img src="img/room/Beware5.png" alt="동물금지">
+								<h2>6명 이상 투숙 금지</h2>
+							</div>
+							<div id="room_gusetroom_Beware_box6">
+								<img src="img/room/Beware6.png" alt="동물금지">
+								<h2>객실 비품 회손 및 불출 금지</h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</main>
+	
+
+	<footer id="room_footer">
+		<div id="footer_top">
+ 
+			<ul class="footer_topBox">
+				<li><a href="brand.html">브랜드 소개</a></li>
+ 
+				<li>
+					<a href="#">패키지/이벤트</a>
+					<ul class="footer_subMenu">
+						<li><a href="package.html">패키지</a></li>
+						<li><a href="event.html">이벤트</a></li>
+						<li><a href="#">제휴사</a></li>
+					</ul>                 
+				</li>
+ 
+				<li>
+					<a href="#">프로그램</a>
+					<ul class="footer_subMenu">
+						<li><a href="ski.html">스키장</a></li>
+						<li><a href="spa.html">스파</a></li>
+						<li><a href="#">승마, 골프</a></li>
+						<li><a href="#">오락시설</a></li>
+					</ul>
+				</li>
+ 
+				<li>
+					<a href="#">통합예약</a>
+					<ul class="footer_subMenu">
+						<li><a href="season.html">시즌권</a></li>
+						<li><a href="room.html">객실예약</a></li>
+						<li><a href="#">개인</a></li>
+						<li><a href="#">단체</a></li>
+					</ul>
+				</li>
+ 
+				<li>
+					<a href="#">다이닝</a>
+					<ul class="footer_subMenu">
+						<li><a href="restaurant.html">레스토랑</a></li>
+						<li><a href="#">푸드코트</a></li>
+						<li><a href="#">카페</a></li>
+					</ul>
+				</li>
+ 
+				<li><a href="customer.html">고객센터</a>
+					<ul class="footer_subMenu">
+						<li><a href="customer.html">분실물센터</a></li>
+						<li><a href="faq.html">FAQ</a></li>
+					</ul>
+				</li>
+			</ul>
+ 
+ 
+ 
+		</div>
+		<div id="footer_bottom">
+			<div id="footer_left">
+ 
+				<a href="#" class="footer_last1">ABOUT  |  TERMS OF USE  |  PRIVACY POLICY  |  CONTACT US |  SITEMAP  |  GIFT CARD</a>
+ 
+				<p class="footer_last2">
+ 
+				PEAR Resort <br>
+				955-Olimpic-ro, Gangwon-do, Pyeongchang-gun, Korea <br>
+				Seoul Office: 285-456, Seung Building 4th Floor, Hengbok-dong, Hengbok-gu, Seoul, Korea <br>
+				President: SeungA JUNG  |  Business license: 820-20-199858 <br>
+				Copyright 2020 PEARL RESORT &copy; All rights Reserved.
+ 
+				</p>
+				
+			</div>
+ 
+ 
+			<div id="footer_right">
+				<ul>
+					<li><a href="https://ko-kr.facebook.com/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://section.blog.naver.com/BlogHome.nhn?directoryNo=0&currentPage=1&groupId=0" class="blog" target="_blank"><i class="fab fa-blogger-b"></i></a></li>
+					<li><a href="https://www.instagram.com/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>  
+</div>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

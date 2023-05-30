@@ -1,0 +1,295 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title>My page</title>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> -->	
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0"/>
+
+	<!-- content 속성값 내용 변경! -->
+	<meta name="Subject" content="내용">
+	<meta name="Title" content="제목">
+	<meta name="Keywords" content="키워드1,키워드2,키워드3">
+	<meta name="Description" content="설명">
+	<meta name="Author" content="제작자/제작사">
+	<meta name="Publisher" content="퍼블리셔">
+	<meta name="Classification" content="타이틀">
+	<meta name="Location" content="회사위치">
+	<meta name="Author-Date" content="제작날자">
+	<meta name="Copyright" content="저작권">
+	<meta name="Robots" content="index,follow"> 
+
+
+	<link rel="shortcut icon" href="img/favicon-16x16.png">
+	<link rel="apple-touch-icon" href="img/favicon-16x16.png">
+
+	<link href='css/reset.css' type='text/css' rel='stylesheet'>
+	<link href='css/mypage.css' type='text/css' rel='stylesheet'>
+
+	<script src='js/lib/jquery-3.3.1.min.js' type='text/javascript' charset='utf-8'></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+	<!-- user jQuery 웹개발자용 -->
+	<script src='js/mypage.js'></script>
+	
+	
+	<!-- 크로스브라우징 -->
+	<!--[if (lte IE 9)]>
+	<script src='js/lib/IE9.js' type='text/javascript' charset='utf-8'></script>		
+	<![endif]-->
+
+	<!--[if (lte IE 8)]>
+	<script src='js/lib/html5shiv.min.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/PIE.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/jqPIE.js' type='text/javascript' charset='utf-8'></script>		
+	<link href='css/ie78.css' rel='stylesheet' type='text/css'>
+	<![endif]-->	
+	
+</head>
+<body>
+	<div id='wrap'>
+		<nav id="gnb">
+			<div id="top_underline">
+				<div id="topMenu">
+					<ul>
+						<li><a href="login.html">로그인</a></li>
+						<li><a href="signin.html">회원가입</a></li>
+						<li><a href="mypage.html">My page</a></li>
+						<li><a href="customer.html">고객센터</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div id="mainMenu_wrap">
+				<div id="menuLogo">
+					<a href="index.html"><img src="img/index/index_logo.png" alt=""></a>
+				</div>
+				<ul id="mainMenu">
+					<li><a href="brand.html">브랜드소개</a></li>
+					<li><a href="package.html">패키지/이벤트</a></li>
+					<li><a href="ski.html">프로그램</a></li>
+					<li><a href="season.html">통합예약</a></li>
+					<li><a href="restaurant.html">다이닝</a></li>
+				</ul>
+				<div id="subMenu">
+					<div id="subMenu_wrap">
+						<div id="subMenu_wrap2">
+							<ul class="subMenu1">
+								<li><a href="package.html">패키지</a></li>
+								<li><a href="event.html">이벤트</a></li>
+								<li><a href="#">제휴사</a></li>
+							</ul>
+							<ul class="subMenu2">
+								<li><a href="ski.html">스키장</a></li>
+								<li><a href="spa.html">스파</a></li>
+								<li><a href="#">승마, 골프</a></li>
+								<li><a href="#">오락시설</a></li>
+							</ul class="subMenu2">
+							<ul>
+								<li><a href="season.html">시즌권</a></li>
+								<li><a href="room.html">객실예약</a></li>
+								<li><a href="#">개인</a></li>
+								<li><a href="#">단체</a></li>
+							</ul class="subMenu2">
+							<ul>
+								<li><a href="restaurant.html">레스토랑</a></li>
+								<li><a href="#">카페</a></li>
+								<li><a href="#">푸드코트</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<header>
+			<div class="mypage_visual_photo">
+				<div class="mypage_visual_boxphoto"></div>
+				<div class="mypage_visual_txt_box">
+					<h1 class="mypage_visual_txt1">마이페이지</h1>
+					<h3 class="mypage_visual_txt2">다양한 혜택을 통합멤버십 회원으로 편리하게 이용하세요.</h3>
+				</div>
+			</div>
+			<div class="mypage_visual_boxes">
+				<h3 class="mypage_visual_menuBox1"><a href="#">나의 예약/구매</a></h3>
+				<h3 class="mypage_visual_menuBox2"><a href="#">나의 정보관리</a></h3>
+			</div>
+		</header>
+
+
+		<section class="mypage_section1">
+			<h3 class="get">나의 예약/구매</h3>
+			
+			<div class="mypage_section1_box">
+				<div class="mypage_section1_boxInner">
+					<div class="mypage_Calendar_boxes">
+						<input type="date" class="mypage_Calendar_box mypage_Calendar_box1" placeholder="시작일" autocomplete="off">
+						<span class="mypage_CalendarWave">~</span>
+						<input type="date" class="mypage_Calendar_box mypage_Calendar_box2" placeholder="종료일" autocomplete="off">
+					</div>
+					<div class="mypage_numberbox">
+						<a href="#"><div class="mypage_number1">1개월</div></a>
+						<a href="#"><div class="mypage_number2">3개월</div></a>
+						<a href="#"><div class="mypage_number3">6개월</div></a>
+						<a href="#"><div class="mypage_search">검색</div></a>
+					</div>
+					<p class="mypage_Calendar_txt"> 객실은 투숙일 기준, 다른 상품은 예약/구매날짜 기준으로 검색합니다.</p>
+					
+				</div>
+			</div>
+		</section>
+
+		<section class="mypage_section2">
+
+			<div class="mypage_for_txtbox1">
+				<div class="mypage_for_txtbox2" id="mypage_for_txtbox2">
+					<a href="#">전체</a>
+				</div>
+				<div class="mypage_for_txtbox3">
+					<a href="#">객실</a>
+				</div>
+				<div class="mypage_for_txtbox4">
+					<a href="#">프로그램</a>
+				</div>
+				<div class="mypage_for_txtbox5">
+					<a href="#">기타</a>
+				</div>
+			</div>
+			
+
+		</section>
+
+		<section class="mypage_section3">
+			
+			<div class="mypage_reserve_box1">
+
+				<div class="mypage_reserve_txt1">
+					<a href="#">예약/구매날짜</a>
+				</div>
+				
+				<div class="mypage_reserve_txt2">
+					<a href="#">예약/구매 주문번호</a>
+				</div>
+
+				<div class="mypage_reserve_txt3">
+					<a href="#">예약/구매 상품</a>
+				</div>
+
+				<div class="mypage_reserve_txt4">
+					<a href="#">이용자</a>
+				</div>
+
+				<div class="mypage_reserve_txt5">
+					<a href="#">이용일자</a>
+				</div>
+
+				<div class="mypage_reserve_txt6">
+					<a href="#">예약/구매 상태</a>
+				</div>
+
+			</div>
+
+			<div class="mypage_reserve_box2">
+				<p>나의 예약/구매내역이 없습니다.</p>
+			</div>
+			
+		</section>
+		<footer id="mypage_footer">
+			<div id="footer_top">
+	 
+				<ul class="footer_topBox">
+					<li><a href="brand.html">브랜드 소개</a></li>
+	 
+					<li>
+						<a href="#">패키지/이벤트</a>
+						<ul class="footer_subMenu">
+							<li><a href="package.html">패키지</a></li>
+							<li><a href="event.html">이벤트</a></li>
+							<li><a href="#">제휴사</a></li>
+						</ul>                 
+					</li>
+	 
+					<li>
+						<a href="#">프로그램</a>
+						<ul class="footer_subMenu">
+							<li><a href="ski.html">스키장</a></li>
+							<li><a href="spa.html">스파</a></li>
+							<li><a href="#">승마, 골프</a></li>
+							<li><a href="#">오락시설</a></li>
+						</ul>
+					</li>
+	 
+					<li>
+						<a href="#">통합예약</a>
+						<ul class="footer_subMenu">
+							<li><a href="season.html">시즌권</a></li>
+							<li><a href="room.html">객실예약</a></li>
+							<li><a href="#">개인</a></li>
+							<li><a href="#">단체</a></li>
+						</ul>
+					</li>
+	 
+					<li>
+						<a href="#">다이닝</a>
+						<ul class="footer_subMenu">
+							<li><a href="restaurant.html">레스토랑</a></li>
+							<li><a href="#">푸드코트</a></li>
+							<li><a href="#">카페</a></li>
+						</ul>
+					</li>
+	 
+					<li><a href="customer.html">고객센터</a>
+						<ul class="footer_subMenu">
+							<li><a href="customer.html">분실물센터</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+	 
+	 
+	 
+			</div>
+			<div id="footer_bottom">
+				<div id="footer_left">
+	 
+					<a href="#" class="footer_last1">ABOUT  |  TERMS OF USE  |  PRIVACY POLICY  |  CONTACT US |  SITEMAP  |  GIFT CARD</a>
+	 
+					<p class="footer_last2">
+	 
+					PEAR Resort <br>
+					955-Olimpic-ro, Gangwon-do, Pyeongchang-gun, Korea <br>
+					Seoul Office: 285-456, Seung Building 4th Floor, Hengbok-dong, Hengbok-gu, Seoul, Korea <br>
+					President: SeungA JUNG  |  Business license: 820-20-199858 <br>
+					Copyright 2020 PEARL RESORT &copy; All rights Reserved.
+	 
+					</p>
+					
+				</div>
+	 
+	 
+				<div id="footer_right">
+					<ul>
+						<li><a href="https://ko-kr.facebook.com/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="https://section.blog.naver.com/BlogHome.nhn?directoryNo=0&currentPage=1&groupId=0" class="blog" target="_blank"><i class="fab fa-blogger-b"></i></a></li>
+						<li><a href="https://www.instagram.com/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="https://www.youtube.com/" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>  
+	</div>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

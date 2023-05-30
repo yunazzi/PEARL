@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html lang='ko'>
+<head>
+	<title> ski </title>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">	
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=Edge"/> -->	
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.6, minimum-scale=1.0"/>
+
+	<!-- content 속성값 내용 변경! -->
+	<meta name="Subject" content="내용">
+	<meta name="Title" content="제목">
+	<meta name="Keywords" content="키워드1,키워드2,키워드3">
+	<meta name="Description" content="설명">
+	<meta name="Author" content="제작자/제작사">
+	<meta name="Publisher" content="퍼블리셔">
+	<meta name="Classification" content="타이틀">
+	<meta name="Location" content="회사위치">
+	<meta name="Author-Date" content="제작날자">
+	<meta name="Copyright" content="저작권">
+	<meta name="Robots" content="index,follow"> 
+
+
+	<link rel="shortcut icon" href="img/favicon-16x16.png">
+	<link rel="apple-touch-icon" href="img/favicon-16x16.png">
+
+	<link href='css/reset.css' type='text/css' rel='stylesheet'>
+	<link href='css/ski.css' type='text/css' rel='stylesheet'>
+
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<script src='js/lib/jquery-3.3.1.min.js' type='text/javascript' charset='utf-8'></script>
+
+	
+	<!-- user jQuery 웹개발자용 -->
+	<script src='js/ski.js'></script>
+	<script src="js/common.js"></script>
+	
+	
+	<!-- 크로스브라우징 -->
+	<!--[if (lte IE 9)]>
+	<script src='js/lib/IE9.js' type='text/javascript' charset='utf-8'></script>		
+	<![endif]-->
+
+	<!--[if (lte IE 8)]>
+	<script src='js/lib/html5shiv.min.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/PIE.js' type='text/javascript' charset='utf-8'></script>
+	<script src='js/lib/jqPIE.js' type='text/javascript' charset='utf-8'></script>		
+	<link href='css/ie78.css' rel='stylesheet' type='text/css'>
+	<![endif]-->	
+	
+</head>
+<body>
+<div id='wrap'>
+	<header id="ski_header"> 
+		<nav id="gnb">
+			<div id="top_underline">
+				<div id="topMenu">
+					<ul>
+						<li><a href="login.html">로그인</a></li>
+						<li><a href="signin.html">회원가입</a></li>
+						<li><a href="mypage.html">My page</a></li>
+						<li><a href="customer.html">고객센터</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="clear"></div>
+			<div id="mainMenu_wrap">
+				<div id="menuLogo">
+					<a href="index.html"><img src="img/index/index_logo.png" alt=""></a>
+				</div>
+				<ul id="mainMenu">
+					<li><a href="brand.html">브랜드소개</a></li>
+					<li><a href="package.html">패키지/이벤트</a></li>
+					<li><a href="ski.html">프로그램</a></li>
+					<li><a href="season.html">통합예약</a></li>
+					<li><a href="restaurant.html">다이닝</a></li>
+				</ul>
+				<div id="subMenu">
+					<div id="subMenu_wrap">
+						<div id="subMenu_wrap2">
+							<ul class="subMenu1">
+								<li><a href="package.html">패키지</a></li>
+								<li><a href="event.html">이벤트</a></li>
+								<li><a href="#">제휴사</a></li>
+							</ul>
+							<ul class="subMenu2">
+								<li><a href="ski.html">스키장</a></li>
+								<li><a href="spa.html">스파</a></li>
+								<li><a href="#">승마, 골프</a></li>
+								<li><a href="#">오락시설</a></li>
+							</ul class="subMenu2">
+							<ul>
+								<li><a href="season.html">시즌권</a></li>
+								<li><a href="room.html">객실예약</a></li>
+								<li><a href="#">개인</a></li>
+								<li><a href="#">단체</a></li>
+							</ul class="subMenu2">
+							<ul>
+								<li><a href="restaurant.html">레스토랑</a></li>
+								<li><a href="#">카페</a></li>
+								<li><a href="#">푸드코트</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="claer"></div>
+	
+	<div id="ski_visual">
+		<video muted autoplay loop>
+			<source src="img/ski/ski_visual_video.mp4" type="video/mp4">
+		</video>
+		<div id="ski_visual_txt">
+			<h1>PEARL을 경험하다</h1>
+		</div>
+		<div id="ski_visual_box">
+			<div id="ski_vb1">
+				<h5>현재날씨</h5>
+				<div id="ski_vb1_1">
+					<img src="img/ski/cloud.png" alt="">
+					<p>14.6℃</p>
+				</div>
+				<div id="ski_vb1_2">
+					<p>55km/h</p>
+					<p>
+						MAX 13℃ <br>
+						MIN 8℃
+					</p>
+				</div>
+			</div>
+			<div id="ski_vb2">
+				<a href="#" id="ski_button">+</a>
+			</div>
+			<div id="ski_vb3">
+				<ul class="ski_vb3">
+					<li>
+						<p>11.04</p>
+						<img src="img/ski/sun_cloud.png" alt="">
+						<p>MAX 9℃/MIN 5℃</p>
+					</li>
+					<li>
+						<p>11.05</p>
+						<img src="img/ski/sun.png" alt="">
+						<p>MAX 13℃/MIN 4℃</p>
+					</li>
+					<li>
+						<p>11.06</p>
+						<img src="img/ski/cloud.png" alt="">
+						<p>MAX 7℃/MIN 1℃</p>
+					</li>
+					<li>
+						<p>11.07</p>
+						<img src="img/ski/sun_cloud.png" alt="">
+						<p>MAX 3℃/MIN 1℃</p>
+					</li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+	<section id="ski_section1">
+		<h1>ACTIVITY</h1>
+
+		<div class="ski_s1_container">
+            <div class="ski_s1_box">
+				<h3>SKI SCHOOL</h3>
+            	<img src="img/ski/ski_section1_1.jpg">
+            </div>
+            <div class="ski_s1_box">
+				<h3>CABLE CAR</h3>
+            	<img src="img/ski/ski_section1_2.jpg">
+            </div>
+            <div class="ski_s1_box">
+				<h3>SKI</h3>
+            	<img src="img/ski/ski_section1_3.jpg">
+            </div>
+            <div class="ski_s1_box">
+				<h3>BOARD</h3>
+            	<img src="img/ski/ski_section1_4.jpg">
+            </div>
+          </div>
+
+	</section>
+
+
+	<section id="ski_section2">
+		<div id="ski_sb1">
+			<div><p>고도</p><h1>951m</h1></div>
+			<div><p>스키장 면적</p><h1>10.12㎦</h1></div>
+			<div><p>코스 수</p><h1>28개 스키 코스</h1></div>
+			<div><p>오지스키</p><h1>8 areas/1.608㎦</h1></div>
+			<div><p>제일 긴 코스</p><h1>5.2km</h1></div>
+			<div><p>리프트</p><h1>14개</h1></div>
+			
+			<!-- <ul id="sb1_1">
+				<li>고도 <h1>951m</h1></li>
+				<li>스키장 면적 <h1>10.12㎦</h1></li>
+				<li>코스 수 <h1>28개 스키 코스</h1></li>
+				<li>오지스키 <h1>8 areas/1.608㎦</h1></li>
+				<li>제일 긴 코스 <h1>5.2km</h1></li>
+				<li>리프트 <h1>14개</h1></li>
+			</ul> -->
+		</div>
+		<div id="ski_sb2">
+			<h3>리프트 가격</h3>
+			<p>리프트 가격 찾기</p>
+			<a href="#" class="ski_sb2_a1">리프트 가격 찾기</a>
+			<a href="#" class="ski_sb2_a2">리프트 표 사기</a>
+		</div>
+	</section>
+
+
+
+	<section id="ski_section3">
+		<div id="ski_sb3">
+			<div id="ski_sb3_1">
+				<h3>렌탈 샵</h3>
+				<p>
+					스키와 보드부터 장비까지 모두 렌탈하실 수 있습니다. <br>
+					최고급 장비와 최상의 상태를 유지합니다.
+				</p>
+				<a href="#">렌탈 티켓 사기</a>
+			</div>
+			<div id="ski_sb3_2">
+				<h3>스키&보드 스쿨</h3>
+				<p>
+					어린아이부터 어른까지 초, 중, 고급반으로 구별됩니다. <br>
+					오전, 오후 수업으로 편리한 시간대에 다양한 수업을 받아보세요.
+				</p>
+				<a href="#">스키스쿨 티켓 사기</a>
+			</div>
+		</div>
+	</section>
+	<section id="ski_section4">
+		<ul id="ski_sb4">
+			<li id="ski_sb4_1">
+				<div class="circle"><img src="img/ski/course_w.png" alt=""></div>
+				<h3>슬로프오픈현황</h3>
+				<p>상상만으로도 짜릿한 즐거움</p>
+				<a href="#"><i class="fas fa-chevron-right"></i></a>
+			</li>
+			<li id="ski_sb4_2">
+				<div class="circle"><img src="img/ski/cam_w.png" alt=""></div>
+				<h3>실시간웹캠</h3>
+				<p>24시간 실시간 생중계</p>
+				<a href="#"><i class="fas fa-chevron-right"></i></a>
+			</li>
+			<li id="ski_sb4_3">
+				<div class="circle"><img src="img/ski/seosoncoupon_w.png" alt=""></div>
+				<h3>시즌권구매</h3>
+				<p>스키&보드 시즌권 구매</p>
+				<a href="#"><i class="fas fa-chevron-right"></i></a>
+			</li>
+		</ul>
+	</section>
+	<section id="ski_section5">
+		<h1>SKI PATROL</h1>
+		<p>
+			스키어들의 안전을 확보하기 위하여 전문 스키 안전요원들이 스키장 곳곳에 배치되어있습니다. <br>
+			안전을 책임지는 스키패트롤원들은 생명을 보호합니다.
+		</p>
+		<img src="img/ski/slopes_map.jpg" alt="">
+		<ul id="ski_sb5">
+			<li>
+				<a href="#">안전수칙</a>
+			</li>
+			<li>
+				<a href="#">스키/보드장 예절</a>
+			</li>
+			<li>
+				<a href="#">스키어/보더 금지사항</a>
+			</li>
+			<li class="li_last">
+				<a href="#">스키어/보더 우선권의 규칙</a>
+			</li>
+		</ul>
+
+	</section>
+
+
+	<footer id="ski_footer">
+		<div id="footer_top">
+ 
+			<ul class="footer_topBox">
+				<li><a href="#">브랜드 소개</a></li>
+ 
+				<li>
+					<a href="#">패키지/이벤트</a>
+					<ul class="footer_subMenu">
+						<li><a href="#">패키지</a></li>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">제휴사</a></li>
+					</ul>                 
+				</li>
+ 
+				<li>
+					<a href="#">프로그램</a>
+					<ul class="footer_subMenu">
+						<li><a href="#">스키장</a></li>
+						<li><a href="#">스파</a></li>
+						<li><a href="#">승마, 골프</a></li>
+						<li><a href="#">오락시설</a></li>
+					</ul>
+				</li>
+ 
+				<li>
+					<a href="#">통합예약</a>
+					<ul class="footer_subMenu">
+						<li><a href="#">객실예약</a></li>
+						<li><a href="#">시즌권</a></li>
+						<li><a href="#">개인</a></li>
+						<li><a href="#">단체</a></li>
+					</ul>
+				</li>
+ 
+				<li>
+					<a href="#">다이닝</a>
+					<ul class="footer_subMenu">
+						<li><a href="#">레스토랑</a></li>
+						<li><a href="#">푸드코트</a></li>
+						<li><a href="#">카페</a></li>
+					</ul>
+				</li>
+ 
+				<li><a href="#">고객센터</a>
+					<ul class="footer_subMenu">
+						<li><a href="#">분실물센터</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</li>
+			</ul>
+ 
+ 
+ 
+		</div>
+		<div id="footer_bottom">
+			<div id="footer_left">
+ 
+				<a href="#" class="footer_last1">ABOUT  |  TERMS OF USE  |  PRIVACY POLICY  |  CONTACT US |  SITEMAP  |  GIFT CARD</a>
+ 
+				<p class="footer_last2">
+ 
+				PEAR Resort <br>
+				955-Olimpic-ro, Kengi-do, Pyeongchang-gun, Korea <br>
+				Seoul Office: 285-456, Seung Building 4th Floor, Hengbok-dong, Hengbok-gu, Seoul, Korea <br>
+				President: SeungA JUNG  |  Business license: 820-20-199858 <br>
+				Copyright 2020 PEARL RESORT &copy; All rights Reserved.
+ 
+				</p>
+				
+			</div>
+ 
+ 
+			<div id="footer_right">
+				<ul>
+					<li><a href="https://ko-kr.facebook.com/" class="facebook"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="https://section.blog.naver.com/BlogHome.nhn?directoryNo=0&currentPage=1&groupId=0" class="blog"><i class="fab fa-blogger-b"></i></a></li>
+					<li><a href="https://www.instagram.com/" class="instagram"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="https://www.youtube.com/" class="youtube"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer> 
+	<a href="#" class="goTop">Top</a>
+</div>	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
