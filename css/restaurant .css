@@ -1,0 +1,328 @@
+body{font-family: 'noto sans KR'; font-size: 14px; box-sizing: border-box;}
+span{font-weight: bold;}
+h1{font-size: 42px;}
+h3{font-size: 21px;}
+p{font-size: 14px;}
+
+span{font-weight: bold;}
+
+
+#spa_header{
+    width: 100%; 
+    height: 90px;
+    border-bottom: 1px solid #000;
+}
+#gnb{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #000;
+    background: #000000ec;
+    z-index: 9999;
+}
+#gnb a{
+    color: #eaeaea;
+}
+#topMenu{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+}
+#top_underline{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #000;
+}
+#topMenu ul{
+    width: 350px;
+    height: 30px;
+    float: right;
+}
+#topMenu li{
+    float: left;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+}
+#mainMenu_wrap{
+    width: 1200px;
+    height: 58px; 
+    margin: 0 auto;
+}
+#menuLogo{
+    width: 100px;
+    height: 58px;
+    float: left;
+}
+#mainMenu{
+    width: 1050px;
+    height: 60px;
+    float: right;
+}
+#mainMenu>li{
+    width: 200px;
+    height: 30px;
+    border-right: 1px solid #000;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+    position: relative;
+}
+#mainMenu>li:last-child{
+    border-right: none;
+}
+
+#subMenu{
+    margin-top: 60px;
+    left:0;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: #424242d2;
+    display:none;
+    z-index: 999;
+}
+
+#subMenu_wrap{
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+}
+#subMenu_wrap2{
+    width: 850px;
+    height: 150px;
+    float: right;
+}
+
+#subMenu ul{
+    float: left;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#subMenu li{
+    width: 200px;
+    height: 35px;
+}
+
+#mainMenu_wrap:hover #subMenu{display:block;}
+/*GNB end*/
+
+.clear{clear: both;}
+
+
+.restaurant_visual_photo{ width: 100%; height: 540px; position: relative;}
+.restaurant_visual_boxphoto{
+    background: url(../img/restaurant/restaurant_visual1.jpg) no-repeat center;
+    width: 1920px; height: 500px; position: absolute;}
+
+.restaurant_visual_txt_box{ position: absolute; width: 1000px; height: 100px; top: 206px; left: 500px;}
+.restaurant_visual_txt1{color: #ffffff; position: absolute; left: 385px; font-size: 40px; }
+.restaurant_visual_txt2{left:318px; position:absolute; top: 60px; color: #fff; font-size: 18px;}
+
+.restaurant_txt_box{position: absolute; width: 1200px; height: 75px;left: 360px; bottom:325px;}
+
+.restaurant_menu1{position: absolute; background: #fff; width: 600px; height: 75px;}
+.restaurant_txt1{font-size: 20px; position: absolute; width: 200px; height: 20px; left: 230px; top: 25px; color: #666;}
+
+.restaurant_menu2{position:absolute; background: #e5e5e5; width: 600px; height: 75px; left: 600px;  border-left: 0;}
+.restaurant_txt2{font-size: 20px; position: absolute; width: 200px; height: 20px; left: 248px; top: 25px; color: #666;}
+
+
+.restaurant_section1_photo_box{width: 1200px; height: 604px; position: relative;}
+.restaurant_section1_photo{width: 1200px; height:403px; left: 360px; position: absolute; top:101px; background: url(../img/restaurant/restaurant1.PNG) no-repeat; background-size: cover;}
+
+.section2_food_box{width: 1200px; height: 529px; position: relative; left: 360px;}
+.section2_food_box h1{font-size: 30px; color: #000; position: absolute; z-index: 9999;}
+.section_2_txtbox{width: 310px; height: 30px; background: #d1c0a5; position:absolute; top: 15px; left: 15px; }
+.section2_call{ font-size: 14px; color: #000; position: absolute; left: 1040px;top: 40px; width: 200px; height: 20px;}
+.section2_food_box h3{ width: 400px; height: 20px; position: absolute; color: #000; top:138px; font-size: 21px; } 
+.section_2_txtbox>p{color: #000; font-size: 14px; position: absolute; top:388px; width: 300px;  height: 100px;}
+
+
+
+.section2_five_box{width: 1300px; height: 310px; position: absolute;left: -180px;}
+#section2_slider_wrap{width: 862px; height: 310px; position: absolute; top: 219px; overflow:hidden; left: 316px}
+.section2_five_box li{float: left; width: 225px; height: 310px; padding:0 10px;}
+.section2_five_box img{width: 225px; height: 310px;}
+#left_btn{
+    position: absolute;
+    top: 200px;left: 278px;
+}
+#right_btn{
+    position: absolute;
+    top: 200px;left: 296px;
+}
+
+.section4_five_box{width: 1300px; height: 310px; position: absolute;left: -180px;}
+#section4_slider_wrap{width: 862px; height: 310px; position: absolute; top: 219px; overflow:hidden; left: 316px}
+.section4_five_box li{float: left; width: 225px; height: 310px; padding:0 10px;}
+.section4_five_box img{width: 225px; height: 310px;}
+
+
+.section2_left{width: 150px; height: 150px; position: absolute; top:150px; left: 10px; font-size: 30px;} 
+.section2_right{ position: absolute; top:150px; left: 895px; width: 15px;height: 15px; font-size: 30px;} 
+/* .section2_sub_box1 img{width: 225px; height: 310px; position: absolute; left: -165px;}
+.section2_sub_box2 img{width: 225px; height: 310px; position: absolute; left: 81px;}
+.section2_sub_box3 img{width: 225px; height: 310px; position: absolute; left: 326px;}
+.section2_sub_box4 img{width: 225px; height: 310px; position: absolute; left: 568px;}
+.section2_sub_box5 img{width: 225px; height: 310px; position: absolute; left: 812px;} */
+
+
+.section3_photo{width: 1200px; height:585px; position: relative;}
+.section3_sub_box1{width: 1200px; height:403px; left: 360px; position: absolute; top:100px; background: url(../img/restaurant/restaurant7.jpg) no-repeat; background-size: cover;}
+
+
+
+.section4_round_box{width: 1200px; height: 529px; position: relative; left: 360px;}
+.section4_round_box h1{font-size: 30px; color: #000; position: absolute; z-index: 9999;}
+.section_4_txtbox{width: 240px; height: 30px; background: #d1c0a5; position:absolute; top: 15px; left: 15px; }
+.section4_call{ font-size: 14px; color: #000; position: absolute; left: 1040px;top: 40px; width: 200px; height: 20px;}
+.section4_round_box h3{ width: 400px; height: 20px; position: absolute; color: #000; top:138px; font-size: 21px; } 
+
+.section_4_txtbox>p{color: #000; font-size: 14px; position: absolute; top:404px; width: 300px; height: 100px;}
+.section4_type{width: 140px; height: 25px; background: #d1c0a5; top: 488px; left: 68px; position: absolute; font-size: 14px; line-height: 25px; text-align: center;font-weight: bold;color: #999;}
+
+.section4_five_box{width: 1300px; height: 310px; position: absolute;left: -180px;}
+#section4_slider_wrap{width: 862px; height: 310px; position: absolute; top: 219px; overflow:hidden; left: 316px}
+.section4_five_box li{float: left; width: 225px; height: 310px; padding:0 10px;}
+.section4_five_box img{width: 225px; height: 310px;}
+#left_btn2{
+    position: absolute;
+    top: 200px;left: 278px;
+}
+#right_btn2{
+    position: absolute;
+    top: 200px;left: 296px;
+} 
+
+.section4_left{width: 150px; height: 150px; position: absolute; top:150px; left: 10px; font-size: 30px;} 
+.section4_right{ position: absolute; top:150px; left: 895px; width: 15px;height: 15px; font-size: 30px;} 
+/*.section4_sub_box1{width: 225px; height: 310px; position: absolute; left: -165px;}
+.section4_sub_box2{width: 225px; height: 310px; position: absolute; left: 80px;}
+.section4_sub_box3{width: 225px; height: 310px; position: absolute; left: 325px;}
+.section4_sub_box4{width: 225px; height: 310px; position: absolute; left: 570px;}
+.section4_sub_box5{width: 225px; height: 310px; position: absolute; left: 815px;} */
+
+.section2_five_box{width: 1300px;height: 310px; position: absolute;left: -180px;}
+
+
+.section5_photo{width: 1200px; height:585px; position: relative;}
+.section5_sub_box1{width: 1200px; height:403px; left: 360px; position: absolute; top:100px; background: url(../img/restaurant/restaurant13.jpg) no-repeat center; background-size: cover;}
+
+
+.section6_food_box{width: 1200px; height: 529px; position: relative; left: 360px;}
+.section6_food_box h1{font-size: 30px; color: #000; position: absolute; z-index: 9999;}
+.section_6_txtbox{width: 180px; height: 30px; background: #d1c0a5; position:absolute; top: 15px; left: 15px; }
+.section6_call{ font-size: 14px; color: #000; position: absolute; left: 1040px;top: 40px; width: 200px; height: 20px;}
+.section6_food_box h3{ width: 400px; height: 20px; position: absolute; color: #000; top:138px; font-size: 21px; } 
+.section_6_txtbox>p{color: #000; font-size: 14px; position: absolute; top:425px; width: 300px; height: 100px;}
+
+.section6_five_box{width: 1300px; height: 310px; position: absolute;left: -180px;}
+#section6_slider_wrap{width: 862px; height: 310px; position: absolute; top: 219px; overflow:hidden; left: 316px}
+.section6_five_box li{float: left; width: 225px; height: 310px; padding:0 10px;}
+.section6_five_box img{width: 225px; height: 310px;}
+#left_btn3{
+    position: absolute;
+    top: 200px;left: 278px;
+}
+#right_btn3{
+    position: absolute;
+    top: 200px;left: 296px;
+} 
+
+.section6_left{width: 150px; height: 150px; position: absolute; top:150px; left: 10px; font-size: 30px;} 
+.section6_right{ position: absolute; top:150px; left: 895px; width: 15px;height: 15px; font-size: 30px;} 
+/*.section6_sub_box1{width: 225px; height: 310px; position: absolute; left: -165px; background-size: cover;}
+.section6_sub_box2{width: 225px; height: 310px; position: absolute; left: 80px; background-size: cover;}
+.section6_sub_box3{width: 225px; height: 310px; position: absolute; left: 325px; background-size: cover;}
+.section6_sub_box4{width: 225px; height: 310px; position: absolute; left: 570px; background-size: cover;}
+.section6_sub_box5{width: 225px; height: 310px; position: absolute; left: 815px; background-size: cover;} */
+
+
+
+.section7_photo{width: 1200px; height:585px; position: relative;}
+.section7_sub_box1{width: 1200px; height:403px; left: 360px; position: absolute; top:100px; background: url(../img/restaurant/restaurant19.jpg) no-repeat; background-size: cover;}
+
+
+.section8_food_box{width: 1200px; height: 529px; position: relative; left: 360px;}
+.section8_food_box h1{font-size: 30px; color: #000; position: absolute; z-index: 9999;}
+.section_8_txtbox{width: 190px; height: 30px; background: #d1c0a5; position:absolute; top: 15px; left: 15px; }
+.section8_call{ font-size: 14px; color: #000; position: absolute; left: 1040px;top: 40px; width: 200px; height: 20px;}
+.section8_food_box h3{ width: 400px; height: 20px; position: absolute; color: #000; top:138px; font-size: 21px; } 
+.section_8_txtbox>p{color: #000; font-size: 14px; position: absolute; top:415px; width: 300px; height: 100px; }
+
+.section8_five_box{width: 1300px; height: 310px; position: absolute;left: -180px;}
+#section8_slider_wrap{width: 862px; height: 310px; position: absolute; top: 219px; overflow:hidden; left: 316px}
+.section8_five_box li{float: left; width: 225px; height: 310px; padding:0 10px;}
+.section8_five_box img{width: 225px; height: 310px;}
+#left_btn4{
+    position: absolute;
+    top: 200px;left: 278px;
+}
+#right_box4{
+    position: absolute;
+    top: 200px;left: 296px;
+} 
+
+.section8_left{width: 150px; height: 150px; position: absolute; top:150px; left: 10px; font-size: 30px;} 
+.section8_right{ position: absolute; top:150px; left: 895px; width: 15px;height: 15px; font-size: 30px;} 
+/*.section8_sub_box1{width: 225px; height: 310px; position: absolute; background: url(../img/restaurant/restaurant20.jpg) no-repeat center; left: -165px; background-size: cover;}
+.section8_sub_box2{width: 225px; height: 310px; position: absolute; background: url(../img/restaurant/restaurant21.jpg)no-repeat center; left: 80px; background-size: cover;}
+.section8_sub_box3{width: 225px; height: 310px; position: absolute; background: url(../img/restaurant/restaurant22.jpg)no-repeat center; left: 325px; background-size: cover;}
+.section8_sub_box4{width: 225px; height: 310px; position: absolute; background: url(../img/restaurant/restaurant23.jpg)no-repeat center; left: 570px; background-size: cover;}
+.section8_sub_box5{width: 225px; height: 310px; position: absolute; background: url(../img/restaurant/restaurant24.jpg)no-repeat center; left: 815px; background-size: cover;}*/
+
+
+/*footer*/
+#restaurant_footer{ width: 100%; height: 550px; overflow: hidden; margin-top: 100px;}
+#footer_top{width: 100%; height: 252px; background: url(../img/index/footer_bg.png); position: relative;}
+.footer_topBox{list-style: none; position: absolute; left: 731px; top:62px}
+.footer_subMenu li a{color: #999;}
+.footer_topBox a{
+    color: #fff;
+    display:block;
+    text-decoration:none;
+}
+.footer_topBox li{
+    float:left;
+    padding:0;
+    width:110px;
+    height:14px;
+    line-height:14px;
+    text-align:center;
+    list-style:none;
+    text-align: center;
+}
+.footer_subMenu li{
+    width:80px;
+    height: 25px;
+    line-height: 25px;
+    list-style:none;
+    padding-right: 15px;
+}
+.footer_subMenu{width: 80px; height: 100px; text-align: center;margin-left: 10px; padding: 5px;}
+ 
+#footer_bottom{ width: 100%; height: 299px; background: #000; position: relative;}
+#footer_left{width: 700px; height: 200px; margin-left: 426px; padding-top: 62px;}
+#footer_left a{color: #fff;}
+#footer_left p{color: #fff;}
+.footer_last1{ width: 600px; height: 15px; font-size: 16px; left: 426px; color: #fff; word-spacing: 5px;}
+.footer_last2{margin-top: 30px; line-height: 22px;}
+ 
+#footer_right ul{list-style: none;}
+#footer_right{ width: 237px; height: 46px; position: relative; left: 1292px;}
+.facebook{position: absolute; width: 50px; height: 50px; top: -210px; color: #fff; left: 0px;}
+.blog{position: absolute; width: 50px; height: 50px ; top: -210px; color: #fff; left: 70px;}
+.instagram{position: absolute; width: 50px; height: 50px;  top: -210px; color: #fff; left: 140px;}
+.youtube{position: absolute; width: 50px; height: 50px;  top: -210px; color: #fff; left: 210px;}
+
+
+.goTop{
+    position: fixed; bottom: 30px; right: 30px; display: none; 
+    width: 50px; height: 50px; background: #333; color: #fff; 
+    border-radius: 50px; text-align: center; line-height: 50px;
+    font-size: 1.2em;
+}

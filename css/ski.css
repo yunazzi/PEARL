@@ -1,0 +1,380 @@
+body{font-family: 'noto sans KR'; font-size: 14px; box-sizing: border-box;}
+span{font-weight: bold;}
+h1{font-size: 42px;}
+h3{font-size: 21px;}
+p{font-size: 14px;}
+
+span{font-weight: bold;}
+
+
+#ski_header{
+    width: 100%; 
+    height: 90px;
+    border-bottom: 1px solid #000;
+}
+#gnb{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #000;
+    background: #000000ec;
+    z-index: 9999;
+}
+#gnb a{
+    color: #eaeaea;
+}
+#topMenu{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+}
+#top_underline{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #000;
+}
+#topMenu ul{
+    width: 350px;
+    height: 30px;
+    float: right;
+}
+#topMenu li{
+    float: left;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+}
+#mainMenu_wrap{
+    width: 1200px;
+    height: 58px; 
+    margin: 0 auto;
+}
+#menuLogo{
+    width: 100px;
+    height: 58px;
+    float: left;
+}
+#mainMenu{
+    width: 1050px;
+    height: 60px;
+    float: right;
+}
+#mainMenu>li{
+    width: 200px;
+    height: 30px;
+    border-right: 1px solid #000;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+    position: relative;
+}
+#mainMenu>li:last-child{
+    border-right: none;
+}
+
+#subMenu{
+    margin-top: 60px;
+    left:0;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: #424242d2;
+    display:none;
+    z-index: 999;
+}
+
+#subMenu_wrap{
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+}
+#subMenu_wrap2{
+    width: 850px;
+    height: 150px;
+    float: right;
+}
+
+#subMenu ul{
+    float: left;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#subMenu li{
+    width: 200px;
+    height: 35px;
+}
+
+#mainMenu_wrap:hover #subMenu{display:block;}
+/*GNB end*/
+
+
+.clear{clear: both;}
+
+
+
+#ski_visual{
+    width: 100%;height: 900px;
+    overflow: hidden;margin: 0px auto;position: relative;
+}
+video{width: 100%;}
+#ski_visual_txt{
+    width: 1200px;height: 150px; position: absolute; top: 200px;left: 50%;margin-left: -600px;
+}
+#ski_visual_txt h1{color: #fff;}
+#ski_visual_box{
+    width: 1200px;height: 530px; position: absolute;top: 300px;left: 50%;margin-left: -600px;
+    color: #fff;font-weight: normal;
+}
+#ski_vb1{
+    width: 440px;height: 240px;position: relative;
+    background: rgba(0, 0, 0, 0.3);padding: 30px;
+}
+#ski_vb1 h5{margin-left: 20px;}
+#ski_vb1_1, #ski_vb1_2{width: 190px; height: 200px;position: absolute;padding: 30px;}
+#ski_vb1_1{left: 0;text-align: center;}
+#ski_vb1_1 img{width: 130px;margin-bottom: 20px;}
+#ski_vb1_2{right: 0;padding-top: 80px;font-weight: normal;}
+#ski_vb1_2 p:first-child{margin-bottom: 55px;}
+
+#ski_vb2{
+    width: 50px;height: 50px;position: absolute;
+}
+#ski_vb2 a{display: block;width: 40px;height: 40px;background: rgba(0, 0, 0, 0.3);
+border-radius:20px;text-align: center;line-height: 40px;color: #fff;
+position: absolute; left: 520px;bottom: 55px;}
+
+
+.ski_vb3{
+    width: 1000px;height: 180px;position: absolute;
+    background: rgba(0, 0, 0, 0.3);bottom: 0;
+}
+.on{display:none;}
+#ski_vb3 li{float: left;width: 250px;height: 180px;text-align: center;margin-top: 10px;}
+#ski_vb3 li img{width: 85px;margin: 20px auto;}
+
+/*visual end*/
+
+#ski_section1{
+    width: 1200px;height: auto;
+    margin: 100px auto;
+    position: relative;
+}
+#ski_section1 h1{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.ski_s1_container{
+    display: flex;
+    width: 100%;
+    /* padding: 0 100px; */
+    box-sizing: border-box;
+    height: 650px;
+}
+.ski_s1_box{
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 0;
+    line-height: 0;
+    height: 650px;
+}
+.ski_s1_box>h3{
+    color: #fff;
+    position: absolute;
+    line-height: 650px;
+    z-index: 9999;
+    font-weight: bold;
+    margin-left: 20px;
+    text-shadow: 2px 2px 6px #000;
+}
+.ski_s1_box>img{
+    width: 200%;
+    height: 650px;
+    object-fit: cover; 
+    transition: .5s;
+    opacity: .7;
+}
+.ski_s1_box:hover{
+    flex: 1 1 50%;
+}
+.ski_s1_box:hover>img{
+    width: 100%;
+    height: 650px;
+    opacity: 1;
+}
+
+/*s1 end*/
+
+#ski_section2{
+    width: 100%;height: 1000px;
+    background: url(../img/ski/ski_section2_bg.jpg); position: relative;
+}
+#ski_sb1{
+    width: 1200px;height: 530px;
+    position: relative;
+    left: 50%;margin-left: -600px;top: 100px;
+    background: rgba(255, 255, 255, 0.6);
+}
+#ski_sb1 div{
+    width: 450px;height: 130px;display: inline-block;
+    margin: 20px 30px;border-bottom: 1px solid #333;position: absolute;
+    text-align: right;
+}
+#ski_sb1 div:nth-child(1){top: 30px;left: 60px;}
+#ski_sb1 div:nth-child(2){top: 190px;left: 60px;}
+#ski_sb1 div:nth-child(3){top: 350px;left: 60px;}
+#ski_sb1 div:nth-child(4){top: 30px;right: 60px;}
+#ski_sb1 div:nth-child(5){top: 190px;right: 60px;}
+#ski_sb1 div:nth-child(6){top: 350px;right: 60px;}
+
+#ski_sb1 div h1{font-weight: normal;display: inline-block;line-height: 130px;}
+#ski_sb1 div p{display: inline-block;line-height: 130px;margin-right: 20px;}
+
+#ski_sb2{
+    width: 1200px;height: 190px;
+    position: relative;
+    left: 50%;margin-left: -600px; top: 180px;color: #fff;margin-bottom: 100px;
+    background: url(../img/ski/ski_section2_sb2_bg.jpg) no-repeat center center;
+}
+#ski_button{
+    transition: 0.5s;
+}
+#ski_sb2 h3{position: absolute;left: 60px;top: 65px;}
+#ski_sb2 p{position: absolute;left: 60px;bottom: 65px;}
+#ski_sb2 a{
+    width: 250px;height: 60px; border: 1px solid #fff;
+    display: block;color: #fff;text-align: center;line-height: 60px;
+    position: absolute;top: 50%;margin-top: -30px;
+}
+#ski_sb2 a:hover{
+    background: #d1c0a5;
+}
+.ski_sb2_a1{right: 400px;}
+.ski_sb2_a2{right: 100px;}
+
+
+/*s2 end*/
+
+#ski_section3{
+    width: 100%;height: 500px;position: relative;
+}
+#ski_sb3{width: 1200px;height: 300px;position: absolute; 
+    top: 50%;margin-top: -150px;left: 50%;margin-left: -600px;color: #fff;}
+#ski_sb3_1{
+    width: 478px;height: 180px;padding: 60px;
+    position: relative;float: left;background: url(../img/ski/sb3_1_bg.jpg) no-repeat center center;
+}
+#ski_sb3_2{
+    width: 478px;height: 180px;padding: 60px;
+    position: relative; float: left;background: url(../img/ski/sb3_2_bg.jpg) no-repeat center center;
+}
+#ski_sb3 h3{position: absolute;}
+#ski_sb3 p{position: absolute;top: 100px;}
+#ski_sb3_1 a, #ski_sb3_2 a{
+    position: absolute;left: 60px;bottom: 60px;
+    width: 250px;height: 60px;border: 1px solid #fff;color: #fff;text-align: center;line-height: 60px;
+}
+#ski_sb3 a:hover{
+    background: #d1c0a5;
+}
+/*s3 end*/
+
+#ski_section4{
+    width: 100%;height: 250px;position: relative;   
+}
+#ski_sb4{
+    width: 1200px;height: 150px;position: absolute;
+    top: 0;left: 50%;margin-left: -600px;border: 1px solid #000;
+}
+#ski_sb4 li{width: 400px;height: 150px;float: left;position: relative;}
+#ski_sb4 li h3{position: absolute;left: 140px;top: 50px;}
+#ski_sb4 li p{position: absolute;left: 140px;top: 80px;}
+.circle{
+    width: 90px;height: 90px;background: rgba(0, 0, 0, 0.3);border-radius: 45px;display: inline-block;
+    position: absolute;top: 50%;margin-top: -45px;left: 30px;text-align: center;
+}
+.circle:hover{background: #d1c0a5;}
+#ski_sb4 a{color: #d1c0a5;position: absolute;right: 30px;top: 50%;margin-top: -15px;}
+#ski_sb4 img{width: 70px;margin-top: 10px;}
+
+/*s4 end*/
+
+
+#ski_section5{
+    width: 1200px;height: auto;position: relative;
+    left: 50%;margin-left: -600px;
+}
+#ski_section5 h1{margin-bottom: 20px;text-align: center;}
+#ski_section5 p{margin-bottom: 50px;text-align: center;}
+#ski_sb5{
+    width: 1200px;height: 60px;position: relative;left: 50%;margin-left: -600px;
+    margin-top: 50px;margin-bottom: 100px;
+}
+#ski_sb5 li{
+    width: 253px;height: 58px;border: 1px solid #000;float: left;
+    text-align: center;line-height: 60px;
+}
+#ski_sb5 li:hover{
+    background: #d1c0a5;
+}
+#ski_sb5 li:nth-child(1){margin-right: 60px;}
+#ski_sb5 li:nth-child(2){margin-right: 60px;}
+#ski_sb5 li:nth-child(3){margin-right: 60px;}
+
+/*s5 end*/
+
+
+/*footer*/
+#ski_footer{ width: 100%; height: 550px; overflow: hidden; margin-top: 100px;}
+#footer_top{width: 100%; height: 252px; background: url(../img/index/footer_bg.png); position: relative;}
+.footer_topBox{list-style: none; position: absolute; left: 731px; top:62px}
+.footer_subMenu li a{color: #999;}
+.footer_topBox a{
+    color: #fff;
+    display:block;
+    text-decoration:none;
+}
+.footer_topBox li{
+    float:left;
+    padding:0;
+    width:110px;
+    height:14px;
+    line-height:14px;
+    text-align:center;
+    list-style:none;
+    text-align: center;
+}
+.footer_subMenu li{
+    width:80px;
+    height: 25px;
+    line-height: 25px;
+    list-style:none;
+    padding-right: 15px;
+}
+.footer_subMenu{width: 80px; height: 100px; text-align: center;margin-left: 10px; padding: 5px;}
+ 
+#footer_bottom{ width: 100%; height: 299px; background: #000; position: relative;}
+#footer_left{width: 700px; height: 200px; margin-left: 426px; padding-top: 62px;}
+#footer_left a{color: #fff;}
+#footer_left p{color: #fff;}
+.footer_last1{ width: 600px; height: 15px; font-size: 16px; left: 426px; color: #fff; word-spacing: 5px;}
+.footer_last2{margin-top: 30px; line-height: 22px;}
+ 
+#footer_right ul{list-style: none;}
+#footer_right{ width: 237px; height: 46px; position: relative; left: 1292px;}
+.facebook{position: absolute; width: 50px; height: 50px; top: -210px; color: #fff; left: 0px;}
+.blog{position: absolute; width: 50px; height: 50px ; top: -210px; color: #fff; left: 70px;}
+.instagram{position: absolute; width: 50px; height: 50px;  top: -210px; color: #fff; left: 140px;}
+.youtube{position: absolute; width: 50px; height: 50px;  top: -210px; color: #fff; left: 210px;}
+
+
+.goTop{
+    position: fixed; bottom: 30px; right: 30px; display: none; 
+    width: 50px; height: 50px; background: #333; color: #fff; 
+    border-radius: 50px; text-align: center; line-height: 50px;
+    font-size: 1.2em;
+}

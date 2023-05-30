@@ -1,0 +1,208 @@
+body{font-family: 'noto sans KR'; font-size: 14px; box-sizing: border-box;}
+span{font-weight: bold;}
+h1{font-size: 42px;}
+h3{font-size: 21px;}
+p{font-size: 14px;}
+
+
+#gnb{
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid #000;
+    background: #000000ec;
+    z-index: 9999;
+}
+#gnb a{
+    color: #eaeaea;
+}
+#topMenu{
+    width: 1200px;
+    height: 30px;
+    margin: 0 auto;
+}
+#top_underline{
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid #000;
+}
+#topMenu ul{
+    width: 350px;
+    height: 30px;
+    float: right;
+}
+#topMenu li{
+    float: left;
+    width: 70px;
+    height: 25px;
+    line-height: 25px;
+}
+#mainMenu_wrap{
+    width: 1200px;
+    height: 58px; 
+    margin: 0 auto;
+}
+#menuLogo{
+    width: 100px;
+    height: 58px;
+    float: left;
+}
+#mainMenu{
+    width: 1050px;
+    height: 60px;
+    float: right;
+}
+#mainMenu>li{
+    width: 200px;
+    height: 30px;
+    border-right: 1px solid #000;
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 15px;
+    position: relative;
+}
+#mainMenu>li:last-child{
+    border-right: none;
+}
+
+#subMenu{
+    margin-top: 60px;
+    left:0;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    background: #424242d2;
+    display:none;
+    z-index: 999;
+}
+
+#subMenu_wrap{
+    width: 1200px;
+    height: 180px;
+    margin: 0 auto;
+}
+#subMenu_wrap2{
+    width: 850px;
+    height: 150px;
+    float: right;
+}
+
+#subMenu ul{
+    float: left;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+#subMenu li{
+    width: 200px;
+    height: 35px;
+}
+
+#mainMenu_wrap:hover #subMenu{display:block;}
+/*GNB end*/
+
+
+
+/*header*/
+.event_visual_photo{width: 100%; height: auto; position: relative;}
+.event_visual_boxphoto{
+    background: url(../img/season/1.visual.jpg) no-repeat center center;
+    width: 100%; height: 370px; position: absolute;}
+.event_visual_txt1{margin-bottom: 25px;}
+
+.event_visual_txt_box{
+    position: absolute; margin: 0 auto; 
+    color: #fff; text-align: center; 
+    width: 530px; height: 100px;
+    top: 140px; left: 38%;
+}
+
+.event_visual_boxes{
+    width: 1200px; height: 75px; 
+    position: relative; top: 332px;
+    margin: 0 auto;
+}
+.event_visual_eventBox1{width: 600px; height: 75px; background: #fff; text-align: center; line-height: 75px; float: left;}
+.event_visual_eventBox2{width: 600px; height: 75px; background: #e5e5e5; text-align: center; line-height: 75px; float: right;}
+
+/*start.section*/
+#season_s1_boxes{width: 100%; height: auto; margin: 0 auto; position: relative;}
+#season_s1_boxes>h1{text-align: center; margin-top: 460px; margin-bottom: 70px;}
+.season_s1_imgWrap{width: 1200px; height: 500px; margin: 0 auto;}
+
+.season_s1_box1,.season_s1_box2,.season_s1_box3{width: 370px; height: 450px; float: left; margin-right: 45px;}
+.season_s1_box3{margin-right: 0;}
+.season_s1_box1_photo{width: 370px; height: 280px; background: url(../img/season/season_visual1.jpg); background-size: cover;}
+.season_s1_box2_photo{width: 370px; height: 280px; background: url(../img/season/season_visual2.jpg); background-size: cover;}
+.season_s1_box3_photo{width: 370px; height: 280px; background: url(../img/season/season_visual3.jpg); background-size: cover;}
+.season_s1_box1_txt,.season_s1_box2_txt,.season_s1_box3_txt{margin: 35px 0;}
+.season_s1_imgWrap h3{margin-bottom: 15px;}
+.season_s1_imgWrap p{line-height: 18px;}
+
+#season_s2_boxes{width: 100%; height: auto; margin: 0 auto; position: relative;}
+#season_s2_boxes>h1{text-align: center; margin-top: 100px; margin-bottom: 70px;}
+#season_s2_boxes ul{width: 1200px; height: 500px; margin: 0 auto;}
+#season_s2_boxes li{width: 1200px; height: 90px; border-bottom: 1px solid #333;}
+.season_s2_img{width: 80px; float: left; margin-right: 50px;}
+.season_titleName{width: 270px; float: left; line-height: 90px;}
+.season_s2_txtP{width: 870px; line-height: 90px;}
+
+
+#season_s3_boxes{width: 100%; height: auto; margin: 0 auto;}
+.season_s3_boxesWrap{width: 1200px; height: 80px; margin: 100px auto;}
+.season_s3_box1,.season_s3_box2,.season_s3_box3,.season_s3_box4{width: 280px; height: 80px; border: 1px solid #000; line-height: 80px; text-align: center; margin-right: 24px; float: left;}
+.season_s3_box4{margin-right: 0;}
+
+#season_s4_boxes{width: 100%; height: auto; margin: 0 auto; position: relative;}
+#season_s4_boxes>h1{text-align: center; margin-bottom: 50px;}
+#season_s4_boxes ul{width: 1200px; height: 350px; margin: 0 auto; margin-bottom: 200px;}
+#season_s4_boxes li{width: 1200px; height: 90px; border-bottom: 1px solid #333; position: relative;cursor: pointer;}
+.season_s4_txtName{width: 120px; float: left; line-height: 90px; margin-right: 50px; margin-left: 80px;}
+.season_s4_txtP{width: 870px; height: 90px; line-height: 90px;}
+.on_ticket{background: url(../img/season/on_ticket.png) no-repeat; width: 28px; height: 20px; position: absolute; top: 35px; left: 20px;}
+#season_s4_boxes{background: yellow;}
+
+/*footer*/
+#customer_footer{width: 100%; height: 600px; overflow: hidden;}
+#footer_top{width: 100%; height: 252px; background: url(../img/index/footer_bg.png); position: relative; margin-top: 100px;}
+.footer_topBox{list-style: none; position: absolute; left: 730px; top:50px;}
+.footer_subMenu li a{color: #999;}
+.footer_topBox a{
+    color: #fff;
+    display:block;
+    text-decoration:none;
+}
+.footer_topBox li{
+    float:left;
+    padding:0;
+    width:110px;
+    height:14px;
+    line-height:14px;
+    text-align:center;
+    list-style:none;
+    text-align: center;
+}
+.footer_subMenu li{
+    width:80px;
+    height: 30px;
+    line-height: 30px;
+    list-style:none;
+    padding-right: 15px;
+}
+.footer_subMenu{width: 80px; height: 120px; text-align: center; margin-left: 10px; padding: 5px; margin-top: 10px;}
+ 
+#footer_bottom{width: 100%; height: 300px; background: #000; position: relative;}
+#footer_left{width: 700px; height: 200px; margin-left: 425px; padding-top: 62px;}
+#footer_left a{color: #fff;}
+#footer_left p{color: #fff;}
+.footer_last1{ width: 600px; height: 15px; font-size: 16px; left: 425px; color: #fff; word-spacing: 5px;}
+.footer_last2{margin-top: 30px; line-height: 22px;}
+ 
+#footer_right ul{list-style: none;}
+#footer_right{ width: 240px; height: 46px; position: relative; left: 1290px;}
+.facebook{position: absolute; width: 50px; height: 50px; top: -210px; color: #fff; left: 0px;}
+.blog{position: absolute; width: 50px; height: 50px ; top: -210px; color: #fff; left: 70px;}
+.instagram{position: absolute; width: 50px; height: 50px;  top: -210px; color: #fff; left: 140px;}
+.youtube{position: absolute; width: 50px; height: 50px;  top: -210px; color: #fff; left: 210px;}
